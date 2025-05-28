@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rilancio Immobiliare</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+        body {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            background-color: #FFFFFF;
+            color: #002A44;
+        }
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #002A44;
+            color: white;
+        }
+        .left, .right {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .right {
+            justify-content: flex-end;
+        }
+        .center {
+            flex: 2;
+            text-align: center;
+        }
+        .logo {
+            font-size: 1.8em;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .search-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
+            cursor: pointer;
+        }
+        .menu-icon {
+            font-size: 1.8em;
+            cursor: pointer;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px 60px;
+            background-color: #002A44;
+            color: white;
+        }
+        .hero p {
+            font-size: 1.5em;
+            margin-top: 20px;
+            font-weight: 400;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #002A44;
+            font-weight: bold;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #C9A66B;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        p, li {
+            font-size: 1.1em;
+        }
+        .panorami img {
+            width: 80%;
+            max-width: 800px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .gallery-item {
+            text-align: center;
+        }
+        .gallery-item img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        .gallery-item p {
+            margin-top: 8px;
+            font-size: 1em;
+            font-weight: 500;
+            color: #002A44;
+        }
+        .details {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #F5F5F5;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 1.2em;
+            color: #002A44;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #002A44;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        a {
+            color: #002A44;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="left search-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M10 2a8 8 0 105.293 14.707l5 5a1 1 0 001.414-1.414l-5-5A8 8 0 0010 2zm0 2a6 6 0 110 12A6 6 0 0110 4z"/>
+            </svg>
+        </div>
+        <div class="center logo">Rilancio Immobiliare</div>
+        <div class="right menu-icon">&#9776;</div>
+    </div>
+
+    <div class="hero">
+        <p>Proprietà immobiliari di prestigio</p>
+    </div>
+
+    <section>
+        <h2>Chi siamo</h2>
+        <p>Da oltre <span style="color: #C9A66B; font-weight:bold;">50 anni</span>, Rilancio Immobiliare è sinonimo di qualità, affidabilità e passione nel mondo dell’edilizia. La nostra storia a <span style="color: #C9A66B; font-weight:bold;">Terrasini</span> è fatta di progetti unici che valorizzano il territorio e offrono soluzioni abitative esclusive.</p>
+        <p>Tra i nostri residence di successo:</p>
+        <ul>
+            <li>Rocche Chiare</li>
+            <li>Rocche Alte</li>
+            <li>Prato degli Ulivi</li>
+            <li>Cielo Chiaro</li>
+            <li>Cala Rossa</li>
+        </ul>
+    </section>
+
+    <section class="panorami">
+        <h2>Vivi ogni giorno il tramonto di Terrasini</h2>
+        <p>Le nostre case sorgono a pochi passi da panorami mozzafiato come questo.</p>
+        <img src="tramonto.jpg" alt="Tramonto a Terrasini">
+    </section>
+
+    <section>
+        <h2>Disponibili al momento</h2>
+    </section>
+
+    <section class="gallery">
+        <div class="gallery-item"><img src="foto1.jpg" alt="Giardino"><p>Giardino</p></div>
+        <div class="gallery-item"><img src="foto2.jpg" alt="Salotto esterno"><p>Salotto esterno</p></div>
+        <div class="gallery-item"><img src="foto3.jpg" alt="Salone interno"><p>Salone interno</p></div>
+        <div class="gallery-item"><img src="foto4.jpg" alt="Cucina open space"><p>Cucina open space</p></div>
+        <div class="gallery-item"><img src="foto5.jpg" alt="Bagno"><p>Bagno</p></div>
+        <div class="gallery-item"><img src="foto6.jpg" alt=""><p></p></div>
+        <div class="gallery-item"><img src="foto7.jpg" alt="Stanza da letto"><p>Stanza da letto</p></div>
+        <div class="gallery-item"><img src="foto8.jpg" alt=""><p></p></div>
+    </section>
+
+    <div class="details">
+        <p>villetta 50mq<br>70mq di esterno con Parcheggio privato<br>1 stanza da letto<br>1 bagno<br>2 posti auto riservati<br>open space salone cucina</p>
+    </div>
+
+    <footer>
+        <p>📞 +39 392 4635884</p>
+        <p>📧 <a href="mailto:manfrediflorio@gmail.com">manfrediflorio@gmail.com</a></p>
+        <a href="mailto:manfrediflorio@gmail.com" class="btn">Contattaci</a>
+    </footer>
+
+</body>
+</html>
